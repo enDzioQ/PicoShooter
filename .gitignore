@@ -1,0 +1,37 @@
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore C build files
+*.o
+*.out
+*.a
+*.so
+*.exe
+
+# Ignore configuration files
+config.txt
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Ignore compiled server binary
+server/server
+
+# Ignore other common files
+*.bak
+*.old
+*.orig
+*.rej
+*.~
+
+# Ignore VS Code settings
+.vscode/
+*.code-workspace
