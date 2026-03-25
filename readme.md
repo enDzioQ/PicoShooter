@@ -113,4 +113,4 @@ The current server version is a development build and still needs production-lev
 
 ## License
 
-To be added.
+This project is licensed under the MIT License - see the LICENSE file for details.
