@@ -89,7 +89,7 @@ def main():
         print("Połączono z serwerem!")
         
         # Otrzymaj wiadomości powitalnes
-        for _ in range(3):
+        for _ in range(2):
             response = receive_from_server(sock)
             if response:
                 print(response, end="")
