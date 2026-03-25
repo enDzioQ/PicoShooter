@@ -88,12 +88,6 @@ def main():
         sock.connect((server_ip, server_port))
         print("Połączono z serwerem!")
         
-        # Otrzymaj wiadomości powitalnes
-        for _ in range(2):
-            response = receive_from_server(sock)
-            if response:
-                print(response, end="")
-        
         # Główna pętla - czytanie ze wejścia i wysyłanie na serwer
         print("\nWpisz wiadomość (pusta linia aby zakończyć):")
         while True:
@@ -129,3 +123,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

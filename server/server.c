@@ -14,16 +14,6 @@ connection_handler(void *socket_desc) {
 	int sock = * (int *)socket_desc;
 	int read_size;
 	char *message , client_message[2000];
-	 
-	/* Send some messages to the client */
-	message = "Greetings! I am your connection handler\n";
-	write(sock , message , strlen(message));
-	 
-	message = "Now type something and i shall repeat what you type\n";
-	write(sock , message , strlen(message));
-	
-	message = "Empty line will close the connection\n";
-	write(sock , message , strlen(message));  
 	
 	do {
 		read_size = recv(sock , client_message , 2000 , 0);
